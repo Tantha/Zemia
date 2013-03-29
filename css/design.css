@@ -1,4 +1,6 @@
 
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -6,6 +8,7 @@
 
 body{
     background-color: #e9e9e9;
+    font-family: Helvetica;
 }
 
 /*Header*/
@@ -25,11 +28,12 @@ body{
 
 #header .subtitle{
     text-transform : uppercase;
-    color: #acacac;
+    color: #6d6f71;
     font-weight: bold;
+    font-family: Myriad Pro;
     width: 560px;
     display: block;
-    font-size: 1.1em;
+    font-size: 13pt;
 }
 #header .content{
     margin-top: 75px;
@@ -39,8 +43,9 @@ body{
 }
 
 #header .title{
-    font-size: 25px;
+    font-size: 19pt;
     font-weight: bold;
+    font-family: Myriad Pro;
     width: 560px;
     display: block;
 }
@@ -48,12 +53,13 @@ body{
 /*Corp de page*/
 
 #content{
+    font-family: Helvetica;
     height: 888px;
 }
 
 #menu{
     width: 940px;
-    background-color: #acacac;
+    background-color: #6d6f71;
     height: 40px;
     line-height: 40px;
     margin: auto;
@@ -78,7 +84,7 @@ body{
     margin-left: 20px;
 }
 
-#menu ul li:nth-child(4):after{
+#menu ul li:nth-child(6):after{
     content:"";
 }
 
@@ -86,14 +92,16 @@ body{
     width:938px;
     height: 480px;
     background-color: white;
-    border: 1px solid #acacac;
+    border: 1px solid #dcdcdc;
     margin: auto;
     margin-top: 40px;
 }
 
 #infos table{
     margin-top: 20px;
-    font-size: 1.4em;
+    margin-left: 20px;
+    font-size: 20pt;
+    text-transform : uppercase;
 }
 
 #infos table tr td{
@@ -102,7 +110,11 @@ body{
 }
 
 #infos table tr:nth-child(2) td{
-    color: #bbd967;
+    color: #9FCD60;
+}
+
+#infos table tr:nth-child(2){
+    margin-top: -35px;
 }
 
 #infos table tr{
@@ -111,20 +123,33 @@ body{
 }
 
 #infos .content ul{
-    margin-left: 80px;
-    color:#bbd967;
+    margin-left: 40px;
+    color:#9FCD60;
 }
 
 #infos .content ul li span{
-    color:#acacac;
+    color:#6d6f71;
 }
 
 #infos .content{
-    width: 900px;
+    width: 550px;
     margin: auto;
+    margin-left: 80px;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 11pt;
     margin-top: 40px;
+}
+
+#infos .quotation{
+    font-style: italic;
+    font-weight: bold;
+    width: 550px;
+    margin: auto;
+    margin-left: 80px;
+    display: block;
+    margin-top: 40px;
+    font-size: 10pt;
+    text-align: center;
 }
 
 #news{
@@ -137,11 +162,20 @@ body{
     margin-top: 20px;
 }
 
+#news > .title{
+    text-transform: uppercase;
+    font-size: 13pt;
+}
+
+#news > .title .right{
+    text-transform: none;
+}
+
 #news .content .left{
     width: 418px;
     height: 178px;
     background-color: white;
-    border: 1px solid #acacac;
+    border: 1px solid #dcdcdc;
 }
 
 #news .content .right{
@@ -149,7 +183,7 @@ body{
     width: 418px;
     height: 178px;
     background-color: white;
-    border: 1px solid #acacac;
+    border: 1px solid #dcdcdc;
 }
 
 #news .title .right{
@@ -157,26 +191,35 @@ body{
 }
 
 #news .content div img{
-    margin-top: 20px;
-    margin-right: 20px;
+    margin: 20px;
+    height:140px;
+    margin-left: 0px;
     float: left;
 }
 
 #news .content div{
     text-align: justify;
     padding-left: 20px;
+    font-size: 11pt;
     padding-right: 20px;
-    color:#acacac;
+    color:#6d6f71;
+}
+
+#news .content div .date{
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 #news .content div .title{
     margin-top: 20px;
     margin-left: 20px;
+    margin-bottom: 0px;
     display: block;
-    line-height: 20px;
-    font-size: 20px;
-    color: #bbd967;
-    margin-bottom: 10px;
+    line-height: 16pt;
+    font-size: 16pt;
+    color: #9FCD60;
 }
 
 /*Footer*/
@@ -198,11 +241,29 @@ body{
 
 
 #footer .content{
-    height: 235px;
+    height: 185px;
+    padding-top: 50px;
     background-color: #f4f2f2;
     -webkit-box-shadow: 0px 9px 24px 9px rgb(104, 104, 104);
     -moz-box-shadow: 0px 9px 24px 9px rgb(104, 104, 104);
     box-shadow: 0px 9px 24px 9px rgb(104, 104, 104);
+}
+
+#footer .content table tr td{
+    text-align: center;
+    line-height: 2;
+    color: #6d6f71;
+    font-weight: bold;
+}
+
+#footer .content table tr td:nth-child(1),#footer .content table tr td:nth-child(2),#footer .content table tr:nth-child(1) td{
+    color:#9FCD60;
+}
+
+
+#footer .content table{
+    width: 940px;
+    margin: auto;
 }
 
 
@@ -214,9 +275,9 @@ body{
 }
 
 .green{
-    color:#bbd967;
+    color:#9FCD60;
 }
 
 .grey{
-    color:#acacac;
+    color:#6d6f71;
 }
